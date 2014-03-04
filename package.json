@@ -14,9 +14,9 @@
     "tic": "^0.2.1"
   },
   "devDependencies": {
-    "imagepreloader": "git://github.com/sethvincent/node-imagepreloader",
     "gameloop": "^0.3.0",
     "browserify": "^3.32.0",
-    "beefy": "^1.1.0"
+    "beefy": "^1.1.0",
+    "load-images": "^0.1.0"
   }
 }

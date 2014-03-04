@@ -1,5 +1,5 @@
 var Game = require('gameloop');
-var Preloader = require('imagepreloader');
+var loadImages = require('load-images');
 var Sprite = require('./');
 
 var canvas = document.createElement('canvas');
@@ -13,22 +13,19 @@ game.width = canvas.width = 800;
 game.height = canvas.height = 400;
 
 var sprite;
-var preload = new Preloader();
-preload
-  .add('zombie-baby.png')
-  .success(function(images){
 
-  	sprite = new Sprite({
-  		game: game,
-			image: images['zombie-baby.png'],
-			frames: 4,
-			fps: 8
-		});
+loadImages('zombie-baby.png', function(err, images){
+	if (err) throw err;
+	
+	sprite = new Sprite({
+		game: game,
+		image: images['zombie-baby.png'],
+		frames: 4,
+		fps: 8
+	});
 
-		game.start();
-  })
-  .error(function(err){ console.log(err); })
-  .done();
+	game.start();
+});
 
 game.on('update', function(dt){
   sprite.update(dt)
