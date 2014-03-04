@@ -1,0 +1,22 @@
+{
+  "name": "sprite-2d",
+  "description": "render sprites",
+  "version": "0.1.0",
+  "repository": {
+    "url": "git://github.com/sethvincent/game-sprite.git"
+  },
+  "main": "index.js",
+  "scripts": {
+    "test": "",
+    "start": "beefy example.js:bundle.js --live"
+  },
+  "dependencies": {
+    "tic": "^0.2.1",
+  },
+  "devDependencies": {
+    "imagepreloader": "git://github.com/sethvincent/node-imagepreloader",
+    "gameloop": "^0.3.0",
+    "browserify": "^3.32.0",
+    "beefy": "^1.1.0"
+  }
+}
