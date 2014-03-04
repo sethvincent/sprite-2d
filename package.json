@@ -11,7 +11,7 @@
     "start": "beefy example.js:bundle.js --live"
   },
   "dependencies": {
-    "tic": "^0.2.1",
+    "tic": "^0.2.1"
   },
   "devDependencies": {
     "imagepreloader": "git://github.com/sethvincent/node-imagepreloader",
