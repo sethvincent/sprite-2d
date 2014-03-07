@@ -16,9 +16,9 @@ npm install --save sprite-2d
 var Sprite = require('sprite-2d');
 
 var sprite = new Sprite({
-	image: image,
-	frames: 4,
-	fps: 20
+  image: image,
+  frames: 4,
+  fps: 20
 });
 ```
 
@@ -40,16 +40,16 @@ sprite.update(dt);
 
 ```
 sprite.draw(function(image, frame){
-	context.drawImage(
-  	image, 
-  	frame.position,
-  	0,
-  	frame.width, 
-  	image.height, 
-  	entity.position.x,
-  	entity.position.y,
-  	frame.width, 
-  	image.height
+  context.drawImage(
+    image, 
+    frame.position,
+    0,
+    frame.width, 
+    image.height, 
+    entity.position.x,
+    entity.position.y,
+    frame.width, 
+    image.height
   );
 });
 ```
